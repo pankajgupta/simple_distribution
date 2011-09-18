@@ -1,0 +1,5 @@
+Reads each line from stdin, where each line is of one or two formats:
+1. <ignore> <value>
+2. <value> <freq>
+
+This script outputs the distributions and various statistics of a group of such lines, on stdout as a comma separated set of lines. it has been tested to work on hundreds of millions of lines (which at the time of this writing take a few minutes on my computer).
