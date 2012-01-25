@@ -1,5 +1,11 @@
 Reads each line from stdin, where each line is of one or two formats:
-1. <ignore> <value>
+1. <to-be-ignored> <value>
 2. <value> <freq>
 
-This script outputs the distributions and various statistics of a group of such lines, on stdout as a comma separated set of lines. it has been tested to work on hundreds of millions of lines (which at the time of this writing take a few minutes on my computer).
+This script outputs the distributions and various statistics of a group of such lines, on stdout as a comma separated set of lines. it has been tested to work on hundreds of millions of lines (which at the time of this writing take a few minutes on my laptop).
+
+Example invocation:
+
+#input.txt: a file containing values of type 1 above where the first column is ignored. We use the '-v'
+#option for that format. Also, if you want the separator to be tab, on shell type Ctrl-v followed by <tab> key.
+distribution.rb -v -t'   ' -p percentiles.txt < out_edges.txt
