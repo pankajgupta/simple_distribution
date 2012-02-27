@@ -10,8 +10,6 @@ require 'getoptlong'
 #
 #Output: various freq distributions
 
-def safe_log(v)
-  v > 0 ? Math.log(v) : -1
 end
 
 field_split_char = ','
